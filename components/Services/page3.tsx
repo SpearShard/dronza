@@ -25,13 +25,19 @@ export default function ServicesPage() {
   const cardRefs = useRef<HTMLDivElement[]>([]);
 
   useEffect(() => {
+    const handlers: Array<{ card: HTMLDivElement; enter: () => void; leave: () => void }> = [];
+
     cardRefs.current.forEach((card) => {
+      if (!card) return;
+
       const img = card.querySelector(".service-img");
       const content = card.querySelector(".service-content");
 
+      if (!img || !content) return;
+
       gsap.set(content, { opacity: 0, scale: 0.95, y: 20 });
 
-      card.addEventListener("mouseenter", () => {
+      const handleMouseEnter = () => {
         const tl = gsap.timeline();
         tl.to(img, {
           scale: 0.9,
@@ -50,9 +56,9 @@ export default function ServicesPage() {
             },
             "+=0.1" // delay after image animation
           );
-      });
+      };
 
-      card.addEventListener("mouseleave", () => {
+      const handleMouseLeave = () => {
         const tl = gsap.timeline();
         tl.to(content, {
           opacity: 0,
@@ -70,8 +76,21 @@ export default function ServicesPage() {
           },
           "-=0.1"
         );
-      });
+      };
+
+      card.addEventListener("mouseenter", handleMouseEnter);
+      card.addEventListener("mouseleave", handleMouseLeave);
+
+      handlers.push({ card, enter: handleMouseEnter, leave: handleMouseLeave });
     });
+
+    // Cleanup function
+    return () => {
+      handlers.forEach(({ card, enter, leave }) => {
+        card.removeEventListener("mouseenter", enter);
+        card.removeEventListener("mouseleave", leave);
+      });
+    };
   }, []);
 
   return (
@@ -100,7 +119,9 @@ export default function ServicesPage() {
           {services.map((service, index) => (
             <div
               key={index}
-              ref={(el) => (cardRefs.current[index] = el!)}
+              ref={(el) => {
+                if (el) cardRefs.current[index] = el;
+              }}
               className="relative group overflow-hidden bg-white shadow-md cursor-pointer h-[320px]"
             >
               <Image
