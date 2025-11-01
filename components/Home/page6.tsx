@@ -25,10 +25,10 @@ export default function TeamSection() {
   return (
     <section className="bg-gray-50 py-20">
       <div className="text-center mb-12">
-        <p className="text-red-600 uppercase font-semibold tracking-wide flex items-center justify-center gap-2">
-          <span className="w-8 h-[1px] bg-red-600"></span>
+        <p className="text-[#0079C0] uppercase font-semibold tracking-wide flex items-center justify-center gap-2">
+          <span className="w-8 h-[1px] bg-[#0079C0]"></span>
           Arial Photography
-          <span className="w-8 h-[1px] bg-red-600"></span>
+          <span className="w-8 h-[1px] bg-[#0079C0]"></span>
         </p>
         <h2 className="text-4xl md:text-5xl font-extrabold mt-4 text-gray-900">
           Our Dedicated Team
@@ -47,7 +47,7 @@ export default function TeamSection() {
               className="w-full h-96 object-cover"
             />
             <div className="p-6 text-center">
-              <p className="text-red-600 text-sm font-medium">
+              <p className="text-[#0079C0] text-sm font-medium">
                 {member.role}
               </p>
               <h3 className="text-lg font-extrabold text-gray-900 mt-1">

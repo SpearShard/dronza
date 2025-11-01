@@ -16,32 +16,32 @@ export default function ServicesSection() {
     {
       title: "Event Photography",
       desc: "Our team has decades of film and tech experience. We know how to deliver amazing results every time.",
-      icon: <Camera size={48} className="text-red-600" />,
+      icon: <Camera size={48} className="text-[#0079C0]" />,
     },
     {
       title: "Aerial Survey & Inspection",
       desc: "We know how to deliver precise and safe inspection services for any terrain.",
-      icon: <Map size={48} className="text-red-600" />,
+      icon: <Map size={48} className="text-[#0079C0]" />,
     },
     {
       title: "Professional Photography",
       desc: "High-quality professional shots that capture the essence of every moment.",
-      icon: <Drone size={48} className="text-red-600" />,
+      icon: <Drone size={48} className="text-[#0079C0]" />,
     },
     {
       title: "360 VR Services",
       desc: "Immersive experiences created with expert VR filming and editing.",
-      icon: <Video size={48} className="text-red-600" />,
+      icon: <Video size={48} className="text-[#0079C0]" />,
     },
     {
       title: "Delivery Services",
       desc: "Efficient, secure, and innovative drone delivery solutions for modern logistics.",
-      icon: <Package size={48} className="text-red-600" />,
+      icon: <Package size={48} className="text-[#0079C0]" />,
     },
     {
       title: "Public Safety",
       desc: "Our drones provide real-time aerial surveillance for critical operations.",
-      icon: <Shield size={48} className="text-red-600" />,
+      icon: <Shield size={48} className="text-[#0079C0]" />,
     },
   ];
 
@@ -51,8 +51,8 @@ export default function ServicesSection() {
         {/* Section Header */}
         <div className="text-center mb-14">
           <div className="flex items-center justify-center space-x-3 mb-2">
-            <div className="w-8 h-[2px] bg-red-600"></div>
-            <p className="text-red-600 font-medium text-sm">
+            <div className="w-8 h-[2px] bg-[#0079C0]"></div>
+            <p className="text-[#0079C0] font-medium text-sm">
               The Best Drone Services
             </p>
           </div>
@@ -103,7 +103,7 @@ function ServiceCard({
       gsap.to(circle, { scale: 0, duration: 0.6, ease: "power2.in" });
       gsap.to(text, { color: "#000000", duration: 0.3, ease: "power1.in" });
       gsap.to(text.querySelectorAll("svg"), {
-        color: "#dc2626",
+        color: "#0079C0",
         duration: 0.3,
       });
     };
@@ -125,7 +125,7 @@ function ServiceCard({
       {/* Circle Overlay */}
       <div
         ref={circleRef}
-        className="absolute bottom-0 left-0 w-64 h-64 bg-red-600 rounded-tr-full z-0"
+        className="absolute bottom-0 left-0 w-64 h-64 bg-[#0079C0] rounded-tr-full z-0"
       ></div>
 
       {/* Content */}
@@ -133,9 +133,9 @@ function ServiceCard({
         <div className="mb-6">{icon}</div>
         <h3 className="text-xl font-bold mb-3">{title}</h3>
         <p className="text-gray-600 mb-4 flex-grow">{desc}</p>
-        <span className="text-red-600 font-semibold text-sm flex items-center space-x-2">
+        <span className="text-[#0079C0] font-semibold text-sm flex items-center space-x-2">
           <span>Read More</span>
-          <div className="w-6 h-[2px] bg-red-600"></div>
+          <div className="w-6 h-[2px] bg-[#0079C0]"></div>
         </span>
       </div>
     </div>

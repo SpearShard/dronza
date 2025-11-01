@@ -45,9 +45,9 @@ export default function PricingTable() {
       {/* Header */}
       <div className="text-center mb-12">
         <div className="flex items-center justify-center gap-4 mb-2">
-          <div className="w-10 h-[2px] bg-red-500"></div>
-          <p className="text-red-500 font-semibold">Comfortable</p>
-          <div className="w-10 h-[2px] bg-red-500"></div>
+          <div className="w-10 h-[2px] bg-[#038BD5]"></div>
+          <p className="text-[#038BD5] font-semibold">Comfortable</p>
+          <div className="w-10 h-[2px] bg-[#038BD5]"></div>
         </div>
         <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">
           Pricing Table
@@ -69,7 +69,7 @@ export default function PricingTable() {
             <h3 className="text-lg font-extrabold text-gray-900 mb-4">
               {plan.name}
             </h3>
-            <p className="text-red-500 text-3xl font-extrabold mb-6">
+            <p className="text-[#038BD5] text-3xl font-extrabold mb-6">
               <span className="align-top text-lg">$</span> {plan.price}
             </p>
             <ul className="text-gray-700 space-y-3 mb-8 text-sm leading-relaxed">
@@ -77,7 +77,7 @@ export default function PricingTable() {
                 <li key={idx}>{feature}</li>
               ))}
             </ul>
-            <button className="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-8 text-sm transition-all">
+            <button className="bg-[#0079C0] hover:bg-red-700 text-white font-semibold py-2 px-8 text-sm transition-all">
               Read More
             </button>
           </div>

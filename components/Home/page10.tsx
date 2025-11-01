@@ -32,15 +32,15 @@ export default function TestimonialSection() {
       className="relative bg-cover bg-center overflow-hidden text-white py-24 md:py-36"
       style={{
         backgroundImage:
-          "url('https://gridvalley.net/wp/dronza/wp-content/uploads/2020/12/bg-2-scaled.jpg')",
+          "url('https://rockspace.net/wp/dronza/wp-content/uploads/2020/12/bg-2-scaled.jpg')",
       }}
     >
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 px-6">
         {/* Left: Text */}
         <div className="md:w-1/2 z-10">
           <div className="flex items-center gap-3 mb-3">
-            <div className="w-10 h-[2px] bg-red-500"></div>
-            <p className="text-red-400 font-semibold text-sm">
+            <div className="w-10 h-[2px] bg-[#038BD5]"></div>
+            <p className="text-[#0079C0] font-semibold text-sm">
               Client Feedback
             </p>
           </div>
@@ -53,7 +53,7 @@ export default function TestimonialSection() {
         <div className="md:w-1/2 relative flex flex-col items-center">
           <img
             ref={droneRef}
-            src="https://gridvalley.net/wp/dronza/wp-content/uploads/2020/12/d-testimonial.png"
+            src="https://rockspace.net/wp/dronza/wp-content/uploads/2020/12/d-testimonial.png"
             alt="Drone"
             className="w-[350px] md:w-[450px] z-10"
           />
@@ -63,7 +63,7 @@ export default function TestimonialSection() {
             <div className="p-8 text-center relative">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-6 h-6 text-red-500 mb-4 mx-auto"
+                className="w-6 h-6 text-[#038BD5] mb-4 mx-auto"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
@@ -76,7 +76,7 @@ export default function TestimonialSection() {
                 suscipit ligula sit amet, mattis libero.
               </p>
             </div>
-            <div className="bg-red-600 text-white text-center py-8 relative">
+            <div className="bg-[#0079C0] text-white text-center py-8 relative">
               <img
                 src="https://i.pravatar.cc/100?img=5"
                 alt="Client"

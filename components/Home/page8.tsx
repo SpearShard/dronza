@@ -30,9 +30,9 @@ export default function LatestNews() {
       {/* Header */}
       <div className="text-center mb-12">
         <div className="flex items-center justify-center gap-4 mb-2">
-          <div className="w-10 h-[2px] bg-red-500"></div>
-          <p className="text-red-500 font-semibold">Our Latest News</p>
-          <div className="w-10 h-[2px] bg-red-500"></div>
+          <div className="w-10 h-[2px] bg-[#038BD5]"></div>
+          <p className="text-[#038BD5] font-semibold">Our Latest News</p>
+          <div className="w-10 h-[2px] bg-[#038BD5]"></div>
         </div>
         <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">
           The latest news from drones life
@@ -51,7 +51,7 @@ export default function LatestNews() {
             className="object-cover w-full h-full"
           />
           <div className="absolute bottom-5 left-5 bg-white p-4 rounded-sm shadow-md w-[85%]">
-            <p className="text-red-500 text-sm font-semibold mb-1">
+            <p className="text-[#038BD5] text-sm font-semibold mb-1">
               December 13, 2020
             </p>
             <h3 className="font-extrabold text-lg text-gray-900">
@@ -65,17 +65,17 @@ export default function LatestNews() {
           {news.map((item, i) => (
             <div
               key={i}
-              className="group bg-white hover:bg-red-500 hover:text-white transition-all duration-300 rounded-md shadow-md p-6 cursor-pointer"
+              className="group bg-white hover:bg-[#038BD5] hover:text-white transition-all duration-300 rounded-md shadow-md p-6 cursor-pointer"
             >
-              <p className="text-red-500 group-hover:text-white text-sm font-semibold mb-2">
+              <p className="text-[#038BD5] group-hover:text-white text-sm font-semibold mb-2">
                 {item.date}
               </p>
               <h3 className="font-extrabold text-lg mb-2">{item.title}</h3>
               <p className="text-gray-600 group-hover:text-white mb-4 text-sm">
                 {item.desc}
               </p>
-              <span className="text-red-500 group-hover:text-white font-semibold text-sm flex items-center gap-2">
-                Read More <span className="w-6 h-[2px] bg-red-500 group-hover:bg-white inline-block"></span>
+              <span className="text-[#038BD5] group-hover:text-white font-semibold text-sm flex items-center gap-2">
+                Read More <span className="w-6 h-[2px] bg-[#038BD5] group-hover:bg-white inline-block"></span>
               </span>
             </div>
           ))}

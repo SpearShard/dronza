@@ -1,104 +1,72 @@
 "use client";
-import Image from "next/image";
-import React from "react";
+import { FaMobileAlt, FaGamepad, FaMicrochip } from "react-icons/fa";
 
-type Item = {
-  id: number;
-  title: string;
-  description?: string;
-  // you can replace this with a component prop for custom icons
-};
-
-const items: Item[] = [
-  { id: 1, title: "High Performance" },
-  { id: 2, title: "Reliable Design" },
-  { id: 3, title: "24/7 Support" },
-];
-
-export default function SplitFeature({
-  imgSrc = "https://gridvalley.net/wp/dronza/wp-content/uploads/2020/12/bg-1-1.jpg",
-  alt = "Feature image",
-  title = "Bold Black Title Goes Here",
-  subtitle = "Smaller supporting paragraph that explains the title in one or two sentences. Keep it short and useful.",
-  ctaText = "Read More",
-}: {
-  imgSrc?: string;
-  alt?: string;
-  title?: string;
-  subtitle?: string;
-  ctaText?: string;
-}) {
+export default function AboutSection() {
   return (
-    <section className="bg-white">
-      <div className="max-w-7xl mx-auto px-6 py-16 md:py-24">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div className="absolute h-[5vw] w-[5vw] bg-red-500 ">
-            </div>
-          {/* LEFT - IMAGE */}
-          <div className="w-full h-72 md:h-[520px] relative rounded-xl overflow-hidden shadow-lg">
-            <Image
-              src={imgSrc}
-              alt={alt}
-              fill
-              className="object-cover"
-              priority
-            />
-          </div>
+    <section className="bg-[#f9f9f9] text-[#0d0d0d] py-20">
+      <div className="container mx-auto flex flex-col lg:flex-row items-center px-6 lg:px-16 gap-12">
+        {/* LEFT IMAGE SECTION */}
+        <div className="relative w-full lg:w-1/2 flex justify-center">
+          {/* Red top-left corner accent */}
+          <div className="absolute -top-8 -left-8 w-[15vw] h-[15vw] bg-[#0079C0] z-0"></div>
 
-          {/* RIGHT - TEXT */}
-          <div className="flex flex-col gap-6">
-            <h2 className="text-4xl md:text-5xl font-extrabold text-black leading-tight">
-              {title}
-            </h2>
+          {/* Main Image */}
+          <img
+            src="https://rockspace.net/wp/dronza/wp-content/uploads/2020/12/bg-1-1.jpg"
+            alt="Drone Aerial View"
+            className="relative z-10 w-full max-w-md lg:max-w-full object-cover"
+          />
 
-            <p className="text-base md:text-lg text-gray-600 max-w-xl">
-              {subtitle}
+          {/* Bottom-right red HD 4K badge */}
+          <div className="h-[7vw] w-[15vw] right-[7vw] absolute bottom-0 right-0 bg-[#0079C0] px-8 py-6 z-20">
+            <h3 className="text-white text-5xl font-extrabold leading-none">
+              HD 4K
+            </h3>
+            <p className="text-white text-xl font-semibold mt-1">
+              Resolution!
             </p>
 
-            <div className="grid gap-4">
-              {items.map((it) => (
-                <div
-                  key={it.id}
-                  className="flex items-start gap-4 md:gap-6"
-                >
-                  {/* SVG icon on the left */}
-                  <div className="flex-shrink-0">
-                    <svg
-                      className="w-10 h-10 md:w-12 md:h-12"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      aria-hidden
-                    >
-                      <circle cx="12" cy="12" r="10" stroke="#EF4444" strokeWidth="1.5" />
-                      <path d="M8 12l2.2 2.2L16 8" stroke="#EF4444" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
-                  </div>
+            {/* Diagonal corner cut effect */}
+            <div className="absolute bottom-0 right-0 w-0 h-0 border-l-[40px] border-l-transparent border-t-[40px] border-t-[#0079C0]"></div>
+          </div>
+        </div>
 
-                  {/* Heading + optional small description */}
-                  <div>
-                    <h3 className="text-lg md:text-xl font-semibold text-gray-900">
-                      {it.title}
-                    </h3>
-                    {it.description && (
-                      <p className="text-sm text-gray-500 mt-1">
-                        {it.description}
-                      </p>
-                    )}
-                  </div>
-                </div>
-              ))}
+        {/* RIGHT CONTENT SECTION */}
+        <div className="w-full lg:w-1/2">
+          <p className="text-[#0079C0] uppercase tracking-wide font-semibold mb-3">
+            About
+          </p>
+
+          <h2 className="text-3xl lg:text-4xl font-extrabold leading-snug mb-4">
+            Specializing in Drone Services, and Aerial Photography
+          </h2>
+
+          <p className="text-gray-600 mb-8 max-w-xl">
+            There are many variations of passages of lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly.
+          </p>
+
+          <div className="space-y-4 mb-8">
+            <div className="flex items-center gap-3">
+              <FaMobileAlt className="text-[#0079C0] text-xl" />
+              <p className="font-semibold">Mobile Device Supported</p>
             </div>
 
-            <div className="mt-4">
-              <button
-                type="button"
-                className="inline-flex items-center justify-center px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-md shadow-sm transition"
-              >
-                {ctaText}
-              </button>
+            <div className="flex items-center gap-3">
+              <FaGamepad className="text-[#0079C0] text-xl" />
+              <p className="font-semibold">Easy integrative control</p>
+            </div>
+
+            <div className="flex items-center gap-3">
+              <FaMicrochip className="text-[#0079C0] text-xl" />
+              <p className="font-semibold">Customized Commands</p>
             </div>
           </div>
+
+          <button className="bg-[#0079C0] text-white px-6 py-3 font-semibold hover:bg-red-700 transition-all">
+            Read More
+          </button>
         </div>
       </div>
     </section>

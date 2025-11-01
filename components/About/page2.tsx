@@ -35,11 +35,11 @@ export default function DroneSection() {
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
         {/* Left: framed drone */}
         <div className="md:w-1/2 flex justify-center">
-          <div className="relative bg-red-600 p-10">
+          <div className="relative bg-[#0079C0] p-10">
             <div className="bg-white p-8 w-[420px] h-[420px] flex items-center justify-center">
               <img
                 ref={droneRef}
-                src="https://gridvalley.net/wp/dronza/wp-content/uploads/2020/12/Untitled-1.png"
+                src="https://rockspace.net/wp/dronza/wp-content/uploads/2020/12/Untitled-1.png"
                 alt="Drone"
                 className="w-[320px] h-auto object-contain will-change-transform"
               />
@@ -49,7 +49,7 @@ export default function DroneSection() {
 
         {/* Right: content */}
         <div className="md:w-1/2">
-          <p className="text-red-600 font-semibold mb-3">About</p>
+          <p className="text-[#0079C0] font-semibold mb-3">About</p>
           <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight mb-6">
             Specializing in Drone Services, and Aerial Photography
           </h2>
@@ -74,7 +74,7 @@ export default function DroneSection() {
             </li>
           </ul>
 
-          <button className="bg-red-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-red-700 transition">
+          <button className="bg-[#0079C0] text-white px-6 py-3 rounded-md font-semibold hover:bg-red-700 transition">
             Read More
           </button>
         </div>

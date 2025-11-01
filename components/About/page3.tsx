@@ -35,7 +35,7 @@ export default function AboutQualitySection() {
       <div className="relative z-10 max-w-6xl mx-auto px-6">
         {/* Heading */}
         <div className="text-center text-white mb-20">
-          <p className="text-red-600 font-semibold tracking-wide">
+          <p className="text-[#0079C0] font-semibold tracking-wide">
             About Quality
           </p>
           <h2 className="text-4xl md:text-5xl font-extrabold leading-tight mt-2">
@@ -52,28 +52,28 @@ export default function AboutQualitySection() {
               className="relative bg-white shadow-lg p-10 text-center transition-all duration-300"
             >
               {/* Icon */}
-              <div className="text-5xl text-red-600 mb-6">{card.icon}</div>
+              <div className="text-5xl text-[#0079C0] mb-6">{card.icon}</div>
               <h3 className="text-xl font-bold mb-4 text-gray-900">
                 {card.title}
               </h3>
               <p className="text-gray-600 mb-6">{card.text}</p>
               <a
                 href="#"
-                className="text-red-600 font-semibold hover:underline inline-flex items-center justify-center"
+                className="text-[#0079C0] font-semibold hover:underline inline-flex items-center justify-center"
               >
                 Read More <span className="ml-2">→</span>
               </a>
 
               {/* bottom-left L */}
               <div className="absolute bottom-0 left-0">
-                <div className="bg-red-600 w-[5px] h-[25px] absolute bottom-0 left-0"></div>
-                <div className="bg-red-600 w-[25px] h-[5px] absolute bottom-0 left-0"></div>
+                <div className="bg-[#0079C0] w-[5px] h-[25px] absolute bottom-0 left-0"></div>
+                <div className="bg-[#0079C0] w-[25px] h-[5px] absolute bottom-0 left-0"></div>
               </div>
 
               {/* bottom-right L */}
               <div className="absolute bottom-0 right-0">
-                <div className="bg-red-600 w-[5px] h-[25px] absolute bottom-0 right-0"></div>
-                <div className="bg-red-600 w-[25px] h-[5px] absolute bottom-0 right-0"></div>
+                <div className="bg-[#0079C0] w-[5px] h-[25px] absolute bottom-0 right-0"></div>
+                <div className="bg-[#0079C0] w-[25px] h-[5px] absolute bottom-0 right-0"></div>
               </div>
             </motion.div>
           ))}
@@ -84,8 +84,8 @@ export default function AboutQualitySection() {
           <p className="font-semibold text-gray-800 mb-6 text-lg">
             Delivering Help And Hope To People Through Sponsorship
           </p>
-          <div className="relative inline-flex items-center justify-center w-20 h-20 rounded-full border-[6px] border-red-500">
-            <div className="w-0 h-0 border-t-[10px] border-t-transparent border-l-[16px] border-l-red-600 border-b-[10px] border-b-transparent"></div>
+          <div className="relative inline-flex items-center justify-center w-20 h-20 rounded-full border-[6px] border-[#0079C0]">
+            <div className="w-0 h-0 border-t-[10px] border-t-transparent border-l-[16px] border-l-[#0079C0] border-b-[10px] border-b-transparent"></div>
           </div>
         </div>
       </div>

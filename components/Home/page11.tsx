@@ -4,12 +4,12 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 
 const logos = [
-  "https://gridvalley.net/wp/dronza/wp-content/uploads/2021/01/w1.png",
-  "https://gridvalley.net/wp/dronza/wp-content/uploads/2021/01/w2.png",
-  "https://gridvalley.net/wp/dronza/wp-content/uploads/2021/01/w3.png",
-  "https://gridvalley.net/wp/dronza/wp-content/uploads/2021/01/w4.png",
-  "https://gridvalley.net/wp/dronza/wp-content/uploads/2021/01/w5.png",
-  "https://gridvalley.net/wp/dronza/wp-content/uploads/2021/01/w6.png",
+  "https://rockspace.net/wp/dronza/wp-content/uploads/2021/01/w1.png",
+  "https://rockspace.net/wp/dronza/wp-content/uploads/2021/01/w2.png",
+  "https://rockspace.net/wp/dronza/wp-content/uploads/2021/01/w3.png",
+  "https://rockspace.net/wp/dronza/wp-content/uploads/2021/01/w4.png",
+  "https://rockspace.net/wp/dronza/wp-content/uploads/2021/01/w5.png",
+  "https://rockspace.net/wp/dronza/wp-content/uploads/2021/01/w6.png",
 ];
 
 export default function PartnerLogos() {

@@ -52,7 +52,7 @@ export default function VideoGallery() {
   ];
 
   return (
-    <section className="bg-[#c31c1c] text-white py-24 px-10 font-[Poppins]">
+    <section className="bg-[#038BD5] text-white py-24 px-10 font-[Poppins]">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <div className="flex justify-between items-start mb-10">
@@ -89,7 +89,7 @@ export default function VideoGallery() {
                 alt={`video-${i}`}
                 className="w-full h-[400px] object-cover transition-transform duration-500 group-hover:scale-105"
               />
-              <button className="absolute bottom-5 left-5 w-10 h-10 bg-[#c31c1c] flex items-center justify-center text-white text-lg">
+              <button className="absolute bottom-5 left-5 w-10 h-10 bg-[#0079C0] flex items-center justify-center text-white text-lg">
                 ▶
               </button>
 

@@ -37,9 +37,9 @@ export default function VideoGallery() {
         {/* Video Section */}
         <div className="relative flex flex-col items-center md:items-start">
           {/* Red bracket on the left */}
-          <div className="absolute -left-6 top-0 bottom-0 w-0 border-l-8 border-red-600 rounded-sm"></div>
-          <div className="absolute -left-6 top-0 w-24 h-0 border-t-8 border-red-600 rounded-sm"></div>
-          <div className="absolute -left-6 bottom-0 w-24 h-0 border-b-8 border-red-600 rounded-sm"></div>
+          <div className="absolute -left-6 top-0 bottom-0 w-0 border-l-8 border-[#0079C0] rounded-sm"></div>
+          <div className="absolute -left-6 top-0 w-24 h-0 border-t-8 border-[#0079C0] rounded-sm"></div>
+          <div className="absolute -left-6 bottom-0 w-24 h-0 border-b-8 border-[#0079C0] rounded-sm"></div>
 
           {/* Main Video Thumbnail */}
           <motion.div
@@ -54,10 +54,10 @@ export default function VideoGallery() {
               className="object-cover"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-black/60 p-4 flex items-center space-x-4">
-              <button className="bg-red-600 p-2 rounded text-white hover:bg-red-700 transition">
+              <button className="bg-[#0079C0] p-2 rounded text-white hover:bg-red-700 transition">
                 <i className="fa fa-play"></i>
               </button>
-              <button className="bg-red-600 p-2 rounded text-white hover:bg-red-700 transition">
+              <button className="bg-[#0079C0] p-2 rounded text-white hover:bg-red-700 transition">
                 <i className="fa fa-link"></i>
               </button>
               <h3 className="text-lg font-semibold ml-2">

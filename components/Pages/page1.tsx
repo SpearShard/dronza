@@ -7,12 +7,12 @@ export default function AboutPage1() {
       {/* Background Image with Red Overlay */}
       <div className="absolute inset-0">
         <Image
-          src="https://gridvalley.net/wp/dronza/wp-content/uploads/2020/12/1-2.jpg"
+          src="https://rockspace.net/wp/dronza/wp-content/uploads/2020/12/1-2.jpg"
           alt="Mountains Background"
           fill
           className="object-cover opacity-40"
         />
-        <div className="absolute inset-0 bg-red-600 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-[#0079C0] mix-blend-multiply" />
       </div>
 
       {/* Content */}

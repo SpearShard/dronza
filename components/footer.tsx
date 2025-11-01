@@ -10,18 +10,17 @@ export default function Footer() {
           <h3 className="text-white font-semibold text-lg mb-6">Get in Touch</h3>
           <ul className="space-y-4 text-sm">
             <li className="flex items-start space-x-3">
-              <MapPin className="w-4 h-4 text-red-500 mt-1" />
+              <MapPin className="w-4 h-4 text-[#038BD5] mt-1" />
               <span>
-                92 Princess Road, Park Avenue <br />
-                Greater London, NW18JR, UK
+                rockspace
               </span>
             </li>
             <li className="flex items-center space-x-3">
-              <Mail className="w-4 h-4 text-red-500" />
-              <span>contact123@gmail.com</span>
+              <Mail className="w-4 h-4 text-[#038BD5]" />
+              <span>contact@rockspace.com</span>
             </li>
             <li className="flex items-center space-x-3">
-              <Phone className="w-4 h-4 text-red-500" />
+              <Phone className="w-4 h-4 text-[#038BD5]" />
               <span>(+291) 912-3456-073</span>
             </li>
           </ul>
@@ -55,7 +54,7 @@ export default function Footer() {
                   className="w-12 h-12 object-cover rounded"
                 />
                 <div>
-                  <p className="text-red-500 text-xs font-semibold">
+                  <p className="text-[#038BD5] text-xs font-semibold">
                     12 December
                   </p>
                   <p className="text-gray-300 text-sm">
@@ -80,7 +79,7 @@ export default function Footer() {
               placeholder="Enter your email"
               className="bg-black text-white text-sm px-4 py-2 w-full outline-none"
             />
-            <button className="bg-red-600 px-4 py-2 text-white font-semibold text-sm">
+            <button className="bg-[#038BD5] px-4 py-2 text-white font-semibold text-sm">
               Subscribe
             </button>
           </div>
@@ -92,10 +91,12 @@ export default function Footer() {
         {/* Logo + Socials */}
         <div className="flex flex-col md:flex-row items-center gap-4">
           <div className="flex items-center space-x-2 bg-black px-4 py-3">
-            <div className="border-2 border-white w-5 h-5 flex items-center justify-center text-red-600 font-bold">
-              C
-            </div>
-            <span className="text-red-600 text-xl font-bold">DRONZA</span>
+            <img
+              src="try1.svg"
+              alt="Logo"
+              className="h-10 w-auto object-contain"
+            />
+            <span className="text-[#038BD5] text-xl font-bold">Mechzilla</span>
           </div>
           <div className="flex space-x-3">
             <a href="#" className="border border-gray-600 p-2 hover:border-red-500">
@@ -128,7 +129,7 @@ export default function Footer() {
 
       {/* Copyright */}
       <div className="text-center text-xs text-gray-500 mt-6">
-        © 2025 All rights reserved. Designed By GridValley
+        © 2025 All rights reserved. Designed By rockspace
       </div>
     </footer>
   );

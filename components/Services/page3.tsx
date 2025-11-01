@@ -8,17 +8,17 @@ export default function ServicesPage() {
     {
       title: "Event Photography",
       desc: "Our team has decades of film and tech experience. We know how to deliver amazing results every time.",
-      img: "https://gridvalley.net/wp/dronza/wp-content/uploads/2020/12/pic5-3.jpg",
+      img: "https://rockspace.net/wp/dronza/wp-content/uploads/2020/12/pic5-3.jpg",
     },
     {
       title: "Aerial Filming",
       desc: "We deliver cinematic visuals from unique aerial perspectives.",
-      img: "https://gridvalley.net/wp/dronza/wp-content/uploads/2020/12/pic5-3.jpg",
+      img: "https://rockspace.net/wp/dronza/wp-content/uploads/2020/12/pic5-3.jpg",
     },
     {
       title: "Drone Surveys",
       desc: "Accurate mapping and inspection using high-end drone technology.",
-      img: "https://gridvalley.net/wp/dronza/wp-content/uploads/2020/12/pic5-3.jpg",
+      img: "https://rockspace.net/wp/dronza/wp-content/uploads/2020/12/pic5-3.jpg",
     },
   ];
 
@@ -100,8 +100,8 @@ export default function ServicesPage() {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-14">
           <div>
             <div className="flex items-center space-x-3 mb-3">
-              <div className="w-8 h-[2px] bg-red-600"></div>
-              <span className="text-red-600 font-semibold text-sm tracking-wide">
+              <div className="w-8 h-[2px] bg-[#0079C0]"></div>
+              <span className="text-[#0079C0] font-semibold text-sm tracking-wide">
                 All Services
               </span>
             </div>
@@ -138,9 +138,9 @@ export default function ServicesPage() {
                 <p className="text-gray-600 text-sm mt-2">
                   {service.desc}
                 </p>
-                <button className="text-red-600 font-semibold mt-4 flex items-center space-x-2">
+                <button className="text-[#0079C0] font-semibold mt-4 flex items-center space-x-2">
                   <span>Read More</span>
-                  <span className="w-6 h-[1.5px] bg-red-600"></span>
+                  <span className="w-6 h-[1.5px] bg-[#0079C0]"></span>
                 </button>
               </div>
             </div>

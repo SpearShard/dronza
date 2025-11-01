@@ -75,18 +75,18 @@ export default function BlogGrid() {
           {currentPosts.map((post, idx) => (
             <div
               key={idx}
-              className="border-[3px] border-gray-300 p-8 hover:border-red-600 transition-all duration-300"
+              className="border-[3px] border-gray-300 p-8 hover:border-[#0079C0] transition-all duration-300"
             >
-              <p className="text-red-600 font-medium text-sm mb-3">
+              <p className="text-[#0079C0] font-medium text-sm mb-3">
                 {post.date}
               </p>
               <h3 className="font-bold text-lg text-gray-900 mb-3 leading-snug">
                 {post.title}
               </h3>
               <p className="text-gray-600 text-sm mb-6">{post.excerpt}</p>
-              <button className="flex items-center text-red-600 font-semibold text-sm group">
+              <button className="flex items-center text-[#0079C0] font-semibold text-sm group">
                 Read More
-                <span className="ml-2 w-6 h-[2px] bg-red-600 group-hover:w-8 transition-all duration-300"></span>
+                <span className="ml-2 w-6 h-[2px] bg-[#0079C0] group-hover:w-8 transition-all duration-300"></span>
               </button>
             </div>
           ))}
@@ -100,8 +100,8 @@ export default function BlogGrid() {
               onClick={() => setCurrentPage(i + 1)}
               className={`w-9 h-9 flex items-center justify-center rounded-full border ${
                 currentPage === i + 1
-                  ? "bg-red-600 text-white border-red-600"
-                  : "text-red-600 border-red-600 hover:bg-red-600 hover:text-white"
+                  ? "bg-[#0079C0] text-white border-[#0079C0]"
+                  : "text-[#0079C0] border-[#0079C0] hover:bg-[#0079C0] hover:text-white"
               } transition-all duration-300`}
             >
               {i + 1}

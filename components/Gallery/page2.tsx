@@ -15,18 +15,18 @@ export default function GalleryPage() {
   const containerRef = useRef<HTMLDivElement>(null);
 
   const galleryItems: GalleryItem[] = [
-    { img: "https://gridvalley.net/wp/dronza/wp-content/uploads/2020/12/pic2-8.jpg", category: "Nature" },
-    { img: "https://gridvalley.net/wp/dronza/wp-content/uploads/2020/12/pic5-3.jpg", category: "Urbanistic" },
-    { img: "https://gridvalley.net/wp/dronza/wp-content/uploads/2020/12/pic6-2.jpg", category: "Landscape" },
-    { img: "https://gridvalley.net/wp/dronza/wp-content/uploads/2020/12/pic3-4.jpg", category: "Nature" },
-    { img: "https://gridvalley.net/wp/dronza/wp-content/uploads/2020/12/pic4-4.jpg", category: "Urbanistic" },
-    { img: "https://gridvalley.net/wp/dronza/wp-content/uploads/2020/12/pic1-8.jpg", category: "Landscape" },
-    { img: "https://gridvalley.net/wp/dronza/wp-content/uploads/2020/12/pic2-4.jpg", category: "Nature" },
-    { img: "https://gridvalley.net/wp/dronza/wp-content/uploads/2020/12/pic5-1.jpg", category: "Urbanistic" },
-    { img: "https://gridvalley.net/wp/dronza/wp-content/uploads/2020/12/pic3-3.jpg", category: "Landscape" },
-    { img: "https://gridvalley.net/wp/dronza/wp-content/uploads/2020/12/pic4-2.jpg", category: "Nature" },
-    { img: "https://gridvalley.net/wp/dronza/wp-content/uploads/2020/12/pic6-3.jpg", category: "Urbanistic" },
-    { img: "https://gridvalley.net/wp/dronza/wp-content/uploads/2020/12/pic1-6.jpg", category: "Landscape" },
+    { img: "https://rockspace.net/wp/dronza/wp-content/uploads/2020/12/pic2-8.jpg", category: "Nature" },
+    { img: "https://rockspace.net/wp/dronza/wp-content/uploads/2020/12/pic5-3.jpg", category: "Urbanistic" },
+    { img: "https://rockspace.net/wp/dronza/wp-content/uploads/2020/12/pic6-2.jpg", category: "Landscape" },
+    { img: "https://rockspace.net/wp/dronza/wp-content/uploads/2020/12/pic3-4.jpg", category: "Nature" },
+    { img: "https://rockspace.net/wp/dronza/wp-content/uploads/2020/12/pic4-4.jpg", category: "Urbanistic" },
+    { img: "https://rockspace.net/wp/dronza/wp-content/uploads/2020/12/pic1-8.jpg", category: "Landscape" },
+    { img: "https://rockspace.net/wp/dronza/wp-content/uploads/2020/12/pic2-4.jpg", category: "Nature" },
+    { img: "https://rockspace.net/wp/dronza/wp-content/uploads/2020/12/pic5-1.jpg", category: "Urbanistic" },
+    { img: "https://rockspace.net/wp/dronza/wp-content/uploads/2020/12/pic3-3.jpg", category: "Landscape" },
+    { img: "https://rockspace.net/wp/dronza/wp-content/uploads/2020/12/pic4-2.jpg", category: "Nature" },
+    { img: "https://rockspace.net/wp/dronza/wp-content/uploads/2020/12/pic6-3.jpg", category: "Urbanistic" },
+    { img: "https://rockspace.net/wp/dronza/wp-content/uploads/2020/12/pic1-6.jpg", category: "Landscape" },
   ];
 
   const filteredItems =
@@ -64,8 +64,8 @@ export default function GalleryPage() {
                 onClick={() => setActiveCategory(cat)}
                 className={`px-4 py-2 rounded-md text-sm font-semibold transition-all duration-300 ${
                   activeCategory === cat
-                    ? "bg-red-600 text-white shadow-md"
-                    : "text-gray-700 hover:text-red-600"
+                    ? "bg-[#0079C0] text-white shadow-md"
+                    : "text-gray-700 hover:text-[#0079C0]"
                 }`}
               >
                 {cat}

@@ -12,24 +12,24 @@ const slides = [
     titleWhite: "Innovative Drones",
     titleRed: "Redefining Flight",
     desc: "Cutting-edge drone technology for aerial excellence.",
-    img: "https://gridvalley.net/wp/dronza/wp-content/uploads/2020/12/slide1-1.jpg",
-    drone: "https://gridvalley.net/wp/dronza/wp-content/uploads/2020/12/d-1-1.png",
+    img: "https://rockspace.net/wp/dronza/wp-content/uploads/2020/12/slide1-1.jpg",
+    drone: "https://rockspace.net/wp/dronza/wp-content/uploads/2020/12/d-1-1.png",
   },
   {
     id: 2,
     titleWhite: "Precision Control",
     titleRed: "Built for Performance",
     desc: "Experience total stability and control in every flight.",
-    img: "https://gridvalley.net/wp/dronza/wp-content/uploads/2020/12/slide1-1.jpg",
-    drone: "https://gridvalley.net/wp/dronza/wp-content/uploads/2020/12/d-2-1.png",
+    img: "https://rockspace.net/wp/dronza/wp-content/uploads/2020/12/slide1-1.jpg",
+    drone: "https://rockspace.net/wp/dronza/wp-content/uploads/2020/12/d-2-1.png",
   },
   {
     id: 3,
     titleWhite: "Aerial Vision",
     titleRed: "Beyond Boundaries",
     desc: "Discover the power of perspective with high-definition vision.",
-    img: "https://gridvalley.net/wp/dronza/wp-content/uploads/2020/12/slide1-1.jpg",
-    drone: "https://gridvalley.net/wp/dronza/wp-content/uploads/2020/12/d-3.png",
+    img: "https://rockspace.net/wp/dronza/wp-content/uploads/2020/12/slide1-1.jpg",
+    drone: "https://rockspace.net/wp/dronza/wp-content/uploads/2020/12/d-3.png",
   },
 ];
 
@@ -40,7 +40,7 @@ export default function HeroSlider() {
     const slidesEl = containerRef.current?.querySelectorAll(".slide");
     if (!slidesEl) return;
 
-    // Continuous orbit animation for all drones
+    // Drone orbit animation
     slidesEl.forEach((slide, i) => {
       const droneEl = slide.querySelector(".drone img, rectangle");
       if (droneEl) {
@@ -54,7 +54,6 @@ export default function HeroSlider() {
               { x: 0, y: 0 },
             ],
             curviness: 1.5,
-            autoRotate: false,
           },
           duration: 6,
           ease: "power1.inOut",
@@ -84,33 +83,37 @@ export default function HeroSlider() {
   }, []);
 
   return (
-    <section className="relative w-full h-screen overflow-hidden">
+    <section className="relative w-full h-[90vh] md:h-screen overflow-hidden">
       <div
         ref={containerRef}
-        className="flex w-[100%] h-full transition-transform duration-700"
+        className="flex w-full h-full transition-transform duration-700"
       >
         {slides.map((slide) => (
           <div
             key={slide.id}
-            className="slide relative w-full h-full flex-shrink-0 bg-cover bg-center flex items-center justify-between px-24"
+            className="slide relative w-full h-full flex-shrink-0 bg-cover bg-center flex flex-col md:flex-row items-center justify-between px-6 md:px-16 lg:px-24 py-16"
             style={{ backgroundImage: `url(${slide.img})` }}
           >
-            {/* Text */}
-            <div className="text-block text-white max-w-lg">
-              <h2 className="text-2xl font-light">{slide.titleWhite}</h2>
-              <h1 className="text-6xl font-bold text-red-500 mt-2">
+            {/* Text Section */}
+            <div className="text-block text-white max-w-lg text-center md:text-left mb-10 md:mb-0">
+              <h2 className="text-lg sm:text-xl md:text-2xl font-light">
+                {slide.titleWhite}
+              </h2>
+              <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-[#038BD5] mt-2">
                 {slide.titleRed}
               </h1>
-              <p className="mt-4 text-lg text-gray-200">{slide.desc}</p>
-              <button className="mt-6 px-6 py-3 bg-red-500 text-white font-semibold rounded-md hover:bg-red-600 transition-colors">
+              <p className="mt-4 text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed">
+                {slide.desc}
+              </p>
+              <button className="mt-6 px-6 py-3 bg-[#038BD5] text-white font-semibold rounded-md hover:bg-[#0079C0] transition-colors text-sm sm:text-base">
                 Ask For Price
               </button>
             </div>
 
-            {/* Drone + rectangle */}
-            <div className="relative  h-64 flex items-center justify-center ">
-              <div className="rectangle absolute w-48 h-32 bg-white/20 backdrop-blur-md rounded-md"></div>
-              <div className=" drone relative h-[27vw]  w-[37vw]">
+            {/* Drone Image + Rectangle */}
+            <div className="relative flex items-center justify-center h-[40vw] sm:h-[30vw] md:h-[25vw] w-full md:w-1/2">
+              <div className="rectangle absolute w-40 sm:w-56 md:w-64 h-24 sm:h-28 md:h-32 bg-white/20 backdrop-blur-md rounded-md"></div>
+              <div className="drone relative h-full w-full max-w-[400px] md:max-w-[500px]">
                 <Image
                   src={slide.drone}
                   alt="Drone"
@@ -124,11 +127,11 @@ export default function HeroSlider() {
       </div>
 
       {/* Bullets */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex space-x-4">
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-3 sm:space-x-4">
         {slides.map((_, i) => (
           <div
             key={i}
-            className={`w-16 h-1 bg-white/40 ${
+            className={`w-8 sm:w-12 md:w-16 h-1 bg-white/40 ${
               i === 0 ? "bg-white" : ""
             } transition-all`}
           ></div>

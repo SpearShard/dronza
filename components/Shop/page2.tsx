@@ -15,28 +15,28 @@ export default function ProductPage() {
 
   const products: Product[] = [
     {
-      image: "https://gridvalley.net/wp/dronza/wp-content/uploads/2020/12/pic2-8.jpg",
+      image: "https://rockspace.net/wp/dronza/wp-content/uploads/2020/12/pic2-8.jpg",
       title: "DJI Inspire 2",
       range: "4.5 km",
       flightTime: "31 Minutes",
       price: "£99.00",
     },
     {
-      image: "https://gridvalley.net/wp/dronza/wp-content/uploads/2020/12/pic2-8.jpg",
+      image: "https://rockspace.net/wp/dronza/wp-content/uploads/2020/12/pic2-8.jpg",
       title: "Mavic Pro Platinum",
       range: "4.5 km",
       flightTime: "31 Minutes",
       price: "£99.00",
     },
     {
-      image: "https://gridvalley.net/wp/dronza/wp-content/uploads/2020/12/pic2-8.jpg",
+      image: "https://rockspace.net/wp/dronza/wp-content/uploads/2020/12/pic2-8.jpg",
       title: "DJI Mavic 2 Pro",
       range: "4.5 km",
       flightTime: "31 Minutes",
       price: "£49.00",
     },
     {
-      image: "https://gridvalley.net/wp/dronza/wp-content/uploads/2020/12/pic2-8.jpg",
+      image: "https://rockspace.net/wp/dronza/wp-content/uploads/2020/12/pic2-8.jpg",
       title: "DJI Mavic 2 Zoom",
       range: "4.5 km",
       flightTime: "31 Minutes",
@@ -56,7 +56,7 @@ export default function ProductPage() {
           {filteredProducts.map((product, index) => (
             <div
               key={index}
-              className="border-[3px] border-gray-300 p-5 hover:border-red-600 transition-all duration-300"
+              className="border-[3px] border-gray-300 p-5 hover:border-[#0079C0] transition-all duration-300"
             >
               <div className="bg-gray-50 mb-4">
                 <img
@@ -74,7 +74,7 @@ export default function ProductPage() {
               <p className="text-gray-600 text-sm mb-3">
                 <span className="font-semibold text-black">Flight Time</span> | {product.flightTime}
               </p>
-              <p className="text-red-600 font-bold text-lg">{product.price}</p>
+              <p className="text-[#0079C0] font-bold text-lg">{product.price}</p>
             </div>
           ))}
         </div>
@@ -91,7 +91,7 @@ export default function ProductPage() {
                 onChange={(e) => setQuery(e.target.value)}
                 className="flex-1 px-3 py-2 outline-none text-sm"
               />
-              <button className="bg-red-600 text-white px-3 flex items-center justify-center">
+              <button className="bg-[#0079C0] text-white px-3 flex items-center justify-center">
                 <Search size={18} />
               </button>
             </div>
@@ -103,19 +103,19 @@ export default function ProductPage() {
               Product Categories
             </h4>
             <ul className="space-y-2 text-sm">
-              <li className="flex justify-between text-gray-700 hover:text-red-600 cursor-pointer">
+              <li className="flex justify-between text-gray-700 hover:text-[#0079C0] cursor-pointer">
                 <span>Drone</span> <span>(4)</span>
               </li>
-              <li className="flex justify-between text-gray-700 hover:text-red-600 cursor-pointer">
+              <li className="flex justify-between text-gray-700 hover:text-[#0079C0] cursor-pointer">
                 <span>Drone Products</span> <span>(5)</span>
               </li>
-              <li className="flex justify-between text-gray-700 hover:text-red-600 cursor-pointer">
+              <li className="flex justify-between text-gray-700 hover:text-[#0079C0] cursor-pointer">
                 <span>Metal</span> <span>(4)</span>
               </li>
-              <li className="flex justify-between text-gray-700 hover:text-red-600 cursor-pointer">
+              <li className="flex justify-between text-gray-700 hover:text-[#0079C0] cursor-pointer">
                 <span>Shop</span> <span>(10)</span>
               </li>
-              <li className="flex justify-between text-gray-700 hover:text-red-600 cursor-pointer">
+              <li className="flex justify-between text-gray-700 hover:text-[#0079C0] cursor-pointer">
                 <span>Uncategorized</span> <span>(0)</span>
               </li>
             </ul>
@@ -126,7 +126,7 @@ export default function ProductPage() {
             <h4 className="text-lg font-bold border-b-2 border-gray-200 pb-2 mb-4">
               Archives
             </h4>
-            <p className="text-gray-700 text-sm cursor-pointer hover:text-red-600">
+            <p className="text-gray-700 text-sm cursor-pointer hover:text-[#0079C0]">
               December 2020
             </p>
           </div>
@@ -150,7 +150,7 @@ export default function ProductPage() {
               ].map((tag) => (
                 <span
                   key={tag}
-                  className="border border-gray-300 px-2 py-1 text-xs text-gray-700 hover:bg-red-600 hover:text-white transition-all cursor-pointer"
+                  className="border border-gray-300 px-2 py-1 text-xs text-gray-700 hover:bg-[#0079C0] hover:text-white transition-all cursor-pointer"
                 >
                   {tag}
                 </span>

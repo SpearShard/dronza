@@ -34,10 +34,10 @@ export default function HowItWorks() {
   return (
     <section className="bg-white py-20">
       <div className="text-center mb-14">
-        <div className="flex items-center justify-center space-x-4 text-red-600">
-          <div className="w-10 h-[2px] bg-red-600"></div>
+        <div className="flex items-center justify-center space-x-4 text-[#0079C0]">
+          <div className="w-10 h-[2px] bg-[#0079C0]"></div>
           <p className="uppercase tracking-wide font-medium">You Will Love It.</p>
-          <div className="w-10 h-[2px] bg-red-600"></div>
+          <div className="w-10 h-[2px] bg-[#0079C0]"></div>
         </div>
         <h2 className="text-4xl font-bold text-gray-900 mt-4">How It Works</h2>
       </div>
@@ -58,10 +58,10 @@ export default function HowItWorks() {
 
         {/* Center Drone */}
         <div className="relative flex justify-center items-center">
-          <div className="w-72 h-72 border-8 border-red-600 absolute rounded-sm" />
+          <div className="w-72 h-72 border-8 border-[#0079C0] absolute rounded-sm" />
           <motion.div animate={controls} className="relative z-10">
             <Image
-              src="https://gridvalley.net/wp/dronza/wp-content/uploads/2020/12/d-1-1.png"
+              src="https://rockspace.net/wp/dronza/wp-content/uploads/2020/12/d-1-1.png"
               alt="Drone"
               width={250}
               height={250}
